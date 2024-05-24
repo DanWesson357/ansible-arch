@@ -25,7 +25,7 @@ install_kde: True
 ## ===========================
 # Web Browser
 # Value can be: vivaldi, firefox, brave, or chromium
-browser: brave
+browser: chromium
 
 ## When set to True, will install elinks and w3m
 install_terminal_browsers: True
