@@ -6,7 +6,7 @@
 
 - name: Get init.toml file
   get_url:
-    url: https://raw.githubusercontent.com/SpaceVim/SpaceVim/master/mode/dark_powered.toml
+    url: https://raw.githubusercontent.com/DanWesson357/ansible-arch/main/roles/common/files/dark_powered.toml
     dest: "/home/{{ username }}/.SpaceVim.d/init.toml"
 
 - name: Get SpaceVim install script
