@@ -4,6 +4,6 @@
     - plasma-meta
     - kde-applications-meta
     - sddm-kcm
-    - clementine
+    # - clementine
     - audacious
    state: present
