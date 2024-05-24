@@ -4,7 +4,7 @@
 # for the playbook to function.
 
 ## User info
-username: keith
+username: shawn
 
 ## Task Configuration
 setup_zsh: True
@@ -25,7 +25,7 @@ install_kde: True
 ## ===========================
 # Web Browser
 # Value can be: vivaldi, firefox, brave, or chromium
-browser: vivaldi
+browser: brave
 
 ## When set to True, will install elinks and w3m
 install_terminal_browsers: True
