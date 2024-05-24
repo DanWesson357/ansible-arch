@@ -5,42 +5,53 @@
 
 
 # Configure pacman (colorize and repos)
-- include: pacman.yml
+- include_tasks: 
+    file: pacman.yml
 
 # Basic apps (vlc, kitty, etc.)
-- include: core-apps.yml
+- include_tasks: 
+    file: core-apps.yml
 
 # Install and configure zsh
-- include: zsh.yml
+- include_tasks: 
+    file: zsh.yml
   when: setup_zsh == True
 
 # Install and configure spacevim
-- include: spacevim.yml
+- include_tasks: 
+    file: spacevim.yml
   when: install_spacevim == True
 
 # Install KDE and Additional Plasma Applications
-- include: kde.yml
+- include_tasks: 
+    file: kde.yml
   when: install_kde == True
 
 # Web Browser
-- include: "{{browser}}.yml"
+- include_tasks: 
+    file: "{{browser}}.yml"
 
 # Terminal web browsers
-- include: terminal_browsers.yml
+- include_tasks: 
+    file: terminal_browsers.yml
   when: install_terminal_browsers == True
 
 # Office
-- include: office.yml
+- include_tasks: 
+    file: office.yml
   when: install_office == True
 
 # Console based Email
-- include: aerc.yml
+- include_tasks: 
+    file: aerc.yml
   when: install_aerc == True
   
 # AUR apps
-- include: aur.yml
+- include_tasks: 
+    file: aur.yml
   when: use_aur == True
 
 # Dotfiles
-- include: dotfiles.yml
+- include_tasks: 
+    file: dotfiles.yml
   when: pull_dotfiles == True
